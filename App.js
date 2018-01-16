@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
-  Text,
   View
 } from 'react-native';
 
@@ -11,10 +9,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello World</Text>
-        <Text>Hello World</Text>
-        <Text>Hello World</Text>
-        <Text>Hello World</Text>
+        <View style={styles.box1} />      
       </View>
     );
   }
@@ -23,6 +18,9 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 50
+  },
+  box1: {
+    flex: 1,
+    backgroundColor: 'red',
   },
 });
